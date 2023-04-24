@@ -1,0 +1,115 @@
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+html {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/890/539/769/mathematics-equations-science-3d-wallpaper-preview.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(63, 167, 247, 0.8);
+    margin: 3rem;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 150px repeat(5, 70px);
+    background-color: rgba(90, 87, 87, 0.90);
+    padding: 16px;
+    box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.display {
+    grid-column: 1 / -1;
+    border: 3px solid white;
+    padding: 15px;
+    margin: 3px 3px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: right;
+    word-break: break-all;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(56, 54, 54, 0.6);
+    border: 1.5px solid white;
+    border-radius: 20px;
+    box-shadow: 0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+.operator {
+    background-color: rgba(13, 13, 13, 0.7);
+}
+
+.equal{
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.8rem;
+}
+
+button:active {
+    background-color: rgba(89, 86, 86, 0.6);
+}
+
+button:focus {
+    outline: none;
+}
+
+.delete-all {
+    background-color: rgba(232, 5, 5, 0.8);
+}
+
+.delete-all:active {
+    background-color: rgba(230, 58, 58, 0.8);
+}
+
+.delete-previous {
+    background-color: rgba(246, 122, 6, 0.9);
+}
+
+.delete-previous:active {
+    background-color: rgba(238, 158, 83, 0.9);
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.display-previous {
+    font-size: 1.2rem;
+}
+
+.display-current {
+    font-size: 1.8rem;
+}
